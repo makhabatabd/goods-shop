@@ -1,0 +1,62 @@
+main {
+    background-color: rgba(247, 243, 237, 0.7);
+    margin: 1rem 0;
+    text-align: center;
+    
+    .body {
+        padding: 1rem 0rem;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border: 1px solid black;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border: white;
+    }
+}
+
+.pagination {
+    .page-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 1rem;
+        background-color: white;
+        border: 1px solid rgb(43, 209, 43);
+        border-radius: 10px;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
+        p {
+            font-size: 1.5rem;
+        }
+        &:hover {
+            background-color: rgb(43, 209, 43);
+        }
+        &.active {
+            background-color: rgb(39, 167, 39);
+        }
+    }
+}
+

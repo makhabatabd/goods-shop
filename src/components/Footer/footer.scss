@@ -1,0 +1,13 @@
+$footerColor: rgb(242, 238, 233);
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $footerColor;
+}
+
+h3 {
+    text-align: center;
+}
+
