@@ -1,5 +1,4 @@
-Goods-Shop
-==============================
+# Goods-Shop
 
 ## Run :
 
@@ -17,12 +16,10 @@ Goods-Shop
     npm start
 ```
 
-### or 
+### or
 
 ```.bash
     webpack
 ```
 
 ### to get (dist) folder, which containts all files to run site.
-
-Прошу сильно не бить за говно-код

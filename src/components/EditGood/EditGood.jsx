@@ -50,7 +50,6 @@ const EditGood = ({ active, setActive}) => {
       <div className={active ? "pop-up__body active" : "pop-up__body"} onClick={e => e.stopPropagation()}>
         <form action="#">
             <h2>Редактирование товара</h2>
-
             <label>
               <span>Наименвание товара:</span>
               <input  name='title' 
@@ -67,12 +66,9 @@ const EditGood = ({ active, setActive}) => {
                       value={values.category}
                       onChange={handleInputChange}
                       required >
-
                         <option value="Laptop">Laptop</option>
                         <option value="Smartphone">Smartphone</option>
                         <option value="Gpu">Gpu</option>
-
-
               </select>
             </label>
 
@@ -82,7 +78,6 @@ const EditGood = ({ active, setActive}) => {
                       value={values.manufacturer}
                       onChange={handleInputChange}
                       required >
-
                         <option value="Apple">Apple</option>
                         <option value="Acer">Acer</option>
                         <option value="Google">Lenovo</option>
@@ -122,13 +117,10 @@ const EditGood = ({ active, setActive}) => {
                       required/>
             </label>
 
-            {values.title && values.price 
-              ? (<input   type="submit" 
-                          onClick={(e) => submit(e)} 
-                          value='Редактировать'/>)
-              : <></>}
-
-            
+            {values.title && values.price &&
+               <input type="submit" 
+                      onClick={(e) => submit(e)} 
+                      value='Редактировать'/>}
         </form>
       </div>
   </div>

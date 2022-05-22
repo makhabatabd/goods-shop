@@ -10,6 +10,7 @@ const GoodPage = () => {
     const good = useSelector(state => state.good.currentGood)
 
     const edit = () => {
+        console.log(1)
         setPopUpActive(true)
     }
 
@@ -21,7 +22,7 @@ const GoodPage = () => {
     }
 
   return (
-    <div className="good-page">
+    <div className="good-page" style={{padding: '1rem'}}>
         <div className="good active">
             <div className="good__img">
                 <div className='img' style={{ backgroundImage: `url(${good.img})` }} /> 
@@ -37,11 +38,11 @@ const GoodPage = () => {
             </div>
         </div>
         <div className='good-page__description'>{good.description}</div>
-        <div className="good-page__button">
-            <button onClick={() => edit()}>Редактировать</button>
+        <div className="good-page__buttons">
+            <button onClick={edit}>Редактировать</button>
+            <button onClick={deleteGood}>Удалить</button>
         </div>
         <EditGood active={popUpActive} setActive={setPopUpActive}/>
-        <button onClick={deleteGood}>Delete</button>
     </div>
   )
 };

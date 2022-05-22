@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
-import GoodItem from '../GoodItem/GoodItem';
+import GoodItem from '../Buttons/GoodItem/GoodItem';
 
 const pageSize = 6;
 const Laptops = () => {

@@ -4,7 +4,7 @@ import './main.scss'
 import { useSelector } from 'react-redux'
 import _ from "lodash"
 
-import GoodItem from '../GoodItem/GoodItem'
+import GoodItem from '../Buttons/GoodItem/GoodItem'
 import PopUp from '../PopUp/PopUp';
 
 

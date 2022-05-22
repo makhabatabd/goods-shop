@@ -7,8 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    padding: 1em 0;
     background: rgba($color: #000000, $alpha: 0.4);
     position: fixed;
     top: 0;
@@ -20,16 +21,19 @@
     &.active {
         pointer-events: all;
         opacity: 1;
+        overflow-y: auto;
     }
 }
 
 .pop-up__body {
-    padding: 1rem;
+    padding: 0 1em 1em;
+    margin: auto;
     border-radius: 10px;
     background-color: white;
     transform: scale(0.5);
     transition: 0.5s ease;
     width: 50vw;
+    overflow-y: auto;
     @media (max-width:750px) {
         width: 70vw;
     }
@@ -83,4 +87,8 @@ input, textarea {
 
 input[type=submit] {
     max-width: 400px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
